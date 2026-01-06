@@ -26,5 +26,10 @@ commercial financial data sources.
 Scripts are numbered in execution order. Running all scripts reproduces the
 main tables and figures in the paper.
 
+## Quickstart
+1. Install dependencies: `pip install -r requirements.txt`
+2. Configure paths/keys (if needed): see `code/00_config_template.py`
+3. Run scripts in `code/` in numeric order to reproduce outputs in `output/`.
+
 ## Contact
 Corresponding author: pmuralitharan@umass.edu
