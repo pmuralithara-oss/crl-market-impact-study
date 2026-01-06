@@ -1,0 +1,21 @@
+Data Dictionary (High-Level)
+
+CRL event fields
+- crl_issue_date: FDA CRL issuance/signature date used as event date (trading day aligned)
+- applicant_name: Applicant listed on FDA CRL documentation
+- application_lookup_number: NDA/BLA identifier used to link FDA records
+- deficiency_type_*: Indicators for blocking deficiency categories (CMC, efficacy, safety, data integrity, labeling)
+- severity: Count of distinct blocking deficiency categories cited in the CRL
+
+Market reaction fields
+- car_-1_+1: Cumulative abnormal return in [-1,+1] trading-day window (benchmark: XBI)
+- car_0_+5: Cumulative abnormal return in [0,+5] window
+- car_-5_+5: Cumulative abnormal return in [-5,+5] window
+- pre_event_vol_30d: 30-trading-day pre-event volatility
+- pre_event_beta: Pre-event beta estimate relative to benchmark
+- market_cap_usd_pre_event_log: log market cap (USD) measured pre-event
+- log_firm_age: log of firm age at event date
+
+Tail risk fields
+- crash_10: Indicator for abnormal return <= -10% in [-1,+1]
+- crash_20: Indicator for abnormal return <= -20% in [-1,+1]
