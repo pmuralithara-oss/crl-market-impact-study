@@ -1,0 +1,10 @@
+# Core analysis dependencies for CRL market impact study
+
+pandas
+numpy
+scipy
+statsmodels
+matplotlib
+requests
+python-dateutil
+pandas_market_calendars
